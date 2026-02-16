@@ -1,13 +1,6 @@
-class Car:
-    def __init__(self,brand,color):
-        self.brand = brand
-        self.color = color
+#create dictionary from two list
+keys = ["name", "age", "city"]
+values = ["Amit", 22, "Lucknow"]
 
-    def start(self):
-        print(f"{self.color}{self.brand} is STARTING...")
-
-car1=Car("Tesla","Red")
-car2=Car("BMW","Black")
-
-car1.start()
-car2.start()
+d = dict(zip(keys, values))
+print(d)
